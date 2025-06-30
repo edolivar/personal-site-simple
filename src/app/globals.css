@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html,
+  body {
+    @apply bg-black text-white;
+    font-family: var(--font-family-lilex);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --font-family-lilex: "Lilex Nerd Font", monospace;
+  --color-lavender: #a47dba;
+  --color-light-grey: #a0a0a0;
+}
+
+@font-face {
+  font-family: "Lilex Nerd Font";
+  src: url("/fonts/lilex-nerd-font/LilexNerdFont-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lilex Nerd Font";
+  src: url("/fonts/lilex-nerd-font/LilexNerdFont-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer components {
+  .app-container {
+    /* stylelint-disable-next-line */
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .content-container {
+    /* stylelint-disable-next-line */
+    @apply mx-auto max-w-3xl;
+  }
+  .nav-bar {
+    @apply py-4 space-x-2;
+  }
+  .nav-bar-item {
+    @apply text-white;
+  }
+  .nav-bar-item:hover {
+    @apply text-lavender;
+  }
+
+  .profile-item {
+    @apply py-2;
+  }
 }

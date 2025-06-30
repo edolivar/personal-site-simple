@@ -88,3 +88,18 @@ export const projects = [
     url: "https://biovizit.webflow.io",
   },
 ];
+
+export const urls = [
+  {
+    title: "email",
+    url: "mailto:mail@edwinolivares.com",
+  },
+  {
+    title: "linkedin",
+    url: "https://www.linkedin.com/in/ejo-3914811a1/",
+  },
+  {
+    title: "github",
+    url: "https://github.com/edolivar",
+  },
+];

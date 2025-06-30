@@ -32,7 +32,7 @@
 @layer components {
   .app-container {
     /* stylelint-disable-next-line */
-    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-10;
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 my-10;
   }
 
   .content-container {
@@ -40,7 +40,7 @@
     @apply mx-auto max-w-4xl;
   }
   .nav-bar {
-    @apply py-4 space-x-2;
+    @apply mb-4 space-x-2;
   }
   .nav-bar-item {
     @apply text-white;
@@ -69,6 +69,14 @@
   .project-details {
     @apply my-2;
   }
+
+  .blog-heading {
+    @apply text-xl font-semibold mt-8;
+  }
+  .blog-details {
+    @apply my-2;
+  }
+
   .accent-link {
     @apply text-light-green;
   }

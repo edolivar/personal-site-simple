@@ -4,6 +4,8 @@ import { IoLocationOutline } from "react-icons/io5";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import Work from "@/components/work";
 import Project from "@/components/project";
+import Blogs from "@/components/blog";
+import Links from "@/components/links";
 
 export default function Home() {
   return (
@@ -23,6 +25,12 @@ export default function Home() {
       </div>
       <div className="mt-12 ">
         <Project />
+      </div>
+      <div className="mt-12 ">
+        <Blogs />
+      </div>
+      <div className="mt-12 ">
+        <Links />
       </div>
     </div>
   );

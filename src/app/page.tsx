@@ -2,6 +2,8 @@ import Header from "@/components/header";
 import { profile } from "@/data/data";
 import { IoLocationOutline } from "react-icons/io5";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
+import Work from "@/components/work";
+import Project from "@/components/project";
 
 export default function Home() {
   return (
@@ -16,6 +18,12 @@ export default function Home() {
         {profile.current}
       </div>
       <div className="profile-item">{profile.desc}</div>
+      <div className="mt-12 ">
+        <Work />
+      </div>
+      <div className="mt-12 ">
+        <Project />
+      </div>
     </div>
   );
 }

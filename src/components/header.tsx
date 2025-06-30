@@ -8,7 +8,7 @@ export default function Header(props: headerProps) {
     <div>
       <NavBar />
       <div className="text-3xl font-bold">
-        <span className="text-lavender">{"* "}</span>
+        <span className="text-light-green">{"* "}</span>
         <Scramble title={props.title} />
       </div>
     </div>

@@ -10,22 +10,20 @@
 
 @theme {
   --font-family-lilex: "Lilex Nerd Font", monospace;
-  --color-lavender: #a47dba;
+  --color-light-green: #90b493;
   --color-light-grey: #a0a0a0;
 }
 
 @font-face {
   font-family: "Lilex Nerd Font";
-  src: url("/fonts/lilex-nerd-font/LilexNerdFont-Regular.ttf")
-    format("truetype");
+  src: url("/fonts/LilexNerdFontMono-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Lilex Nerd Font";
-  src: url("/fonts/lilex-nerd-font/LilexNerdFont-Bold.ttf") format("truetype");
+  src: url("/fonts/LilexNerdFontMono-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -34,12 +32,12 @@
 @layer components {
   .app-container {
     /* stylelint-disable-next-line */
-    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-10;
   }
 
   .content-container {
     /* stylelint-disable-next-line */
-    @apply mx-auto max-w-3xl;
+    @apply mx-auto max-w-4xl;
   }
   .nav-bar {
     @apply py-4 space-x-2;
@@ -48,10 +46,44 @@
     @apply text-white;
   }
   .nav-bar-item:hover {
-    @apply text-lavender;
+    @apply text-light-green;
   }
 
   .profile-item {
     @apply py-2;
   }
+
+  .section-heading {
+    @apply text-2xl font-bold;
+  }
+
+  .work-heading {
+    @apply text-xl font-semibold mt-8;
+  }
+  .work-details {
+    @apply my-2;
+  }
+  .project-heading {
+    @apply text-xl font-semibold mt-8;
+  }
+  .project-details {
+    @apply my-2;
+  }
+  .accent-link {
+    @apply text-light-green;
+  }
+}
+
+@keyframes arrow-float {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(4px, -4px);
+  }
+}
+
+.group:hover .animate-arrow-float {
+  animation: arrow-float 1.5s ease-in-out infinite;
 }

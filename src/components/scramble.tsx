@@ -10,9 +10,9 @@ const Scramble = (props: scambleProps) => {
   const { ref } = useScramble({
     text: props.title,
     tick: 10,
-    speed: 0.8,
-    step: 1,
-    scramble: 20,
+    speed: 1,
+    step: 0.9,
+    scramble: 15,
   });
   return <span ref={ref} />;
 };

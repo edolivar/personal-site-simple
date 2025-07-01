@@ -80,6 +80,9 @@
   .accent-link {
     @apply text-light-green;
   }
+  .projects-blob {
+    @apply my-8;
+  }
 }
 
 @keyframes arrow-float {

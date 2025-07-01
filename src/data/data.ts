@@ -62,30 +62,52 @@ export const projects = [
     role: "developer & designer",
     desc: "transfer legacy system to shopify, and redesign site according to brand identity. integrate shop with 3rd party vendors like macy's",
     url: "https://aremesfermentis.com",
+    points: [
+      "customize shopify liquid to further match brand identity",
+      "customize company emails",
+      "setup mailchimp for client newsletter signup",
+    ],
   },
   {
     name: "drive clone",
     role: "developer & creator",
     desc: "simple google drive clone with user management(clerk), rate limits, analytics(posthog), site health analytics(sentry), and file/image upload (uploadthing)",
     url: "https://drive-klone.netlify.app",
+    points: [
+      "successfully implement core google drive functionality",
+      "implement modern data fetching techniques (ex. data access layer)",
+      "learned how to set permissions and handle authorization/authentication",
+    ],
   },
   {
     name: "so plumbing inc",
     role: "site creator & designer",
     desc: "in the process of remaking company site to something more modern, which displays company information(licenses and contact info)first and foremost",
     url: "https://so-plumbing-inc.vercel.app",
+    points: [
+      "modernize company website to comprehensively display company information",
+      "add job/invoice request functionality",
+    ],
   },
   {
     name: "personal site v3",
     role: "developer & designer",
     desc: "learning how to use tools like aceturnity for flashy animations, and shadcn for nicely styled components",
     url: "https://personal-animated-personal-site-team.vercel.app",
+    points: [
+      "learned how to implement schadcn components w/ aceternity",
+      "understand fundmentals of component tree w/ use of server/client components",
+    ],
   },
   {
     name: "biovizit",
     role: "prototyper",
     desc: "create prototype company looking to move their online tool from free to use to closed. setup user registration, payment capture, and auth",
     url: "https://biovizit.webflow.io",
+    points: [
+      "understand the process of creating a proof of concept",
+      "integrate with 3rd party tools like clerk and stripe",
+    ],
   },
 ];
 

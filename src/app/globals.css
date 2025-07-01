@@ -83,6 +83,19 @@
   .projects-blob {
     @apply my-8;
   }
+
+  .word-decoration {
+    @apply p-1 border border-light-grey rounded-sm text-white bg-black;
+  }
+  .blog-header {
+    @apply text-3xl font-bold;
+  }
+  .blog-date {
+    @apply text-light-grey my-3;
+  }
+  .blog-content {
+    @apply leading-8 text-lg my-4;
+  }
 }
 
 @keyframes arrow-float {

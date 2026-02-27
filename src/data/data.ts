@@ -25,6 +25,16 @@ export const profile = {
 
 export const work = [
   {
+    company: "IAC Training",
+    job: [
+      {
+        position: "Full Stack Developer",
+        time: "mar 2025 - nov 2025",
+        desc: "modernized a legacy enrollment system for a cargo freight certification provider, transitioning manual entry into a streamlined, automated workflow.",
+      },
+    ],
+  },
+  {
     company: "Secure Tech Solutions",
     job: [
       {
@@ -34,7 +44,7 @@ export const work = [
       },
       {
         position: "System Integration Engineer",
-        time: "jun 2024 - july 2024",
+        time: "nov 2024 - feb 2025",
         desc: "redesign company site and branding, setup proper infrastructure for managed services",
       },
     ],
@@ -45,7 +55,7 @@ export const work = [
       {
         position: "Software Engineer 1",
         time: "jan 2023 - jun 2023",
-        desc: "develop oltp system for classified radar system programs, and optimize gui based search (utilizing caching)",
+        desc: "led development of a log filter and search system for an existing tool supporting multiple classified programs which utilized similar radar systems.",
       },
       {
         position: "Software Engineer Intern",

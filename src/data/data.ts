@@ -25,40 +25,40 @@ export const profile = {
 
 export const work = [
   {
-    company: "IAC Training",
+    company: "iac training",
     job: [
       {
-        position: "Full Stack Developer",
+        position: "full stack developer",
         time: "mar 2025 - nov 2025",
         desc: "modernized a legacy enrollment system for a cargo freight certification provider, transitioning manual entry into a streamlined, automated workflow.",
       },
     ],
   },
   {
-    company: "Secure Tech Solutions",
+    company: "secure tech solutions",
     job: [
       {
-        position: "Full Stack Developer",
+        position: "full stack developer",
         time: "oct 2023 - present",
         desc: "prototype, develop, and maintain inital phishing tool complete with analytics; as well as, employee training",
       },
       {
-        position: "System Integration Engineer",
+        position: "system integration engineer",
         time: "nov 2024 - feb 2025",
         desc: "redesign company site and branding, setup proper infrastructure for managed services",
       },
     ],
   },
   {
-    company: "Raytheon",
+    company: "raytheon",
     job: [
       {
-        position: "Software Engineer 1",
+        position: "software engineer 1",
         time: "jan 2023 - jun 2023",
         desc: "led development of a log filter and search system for an existing tool supporting multiple classified programs which utilized similar radar systems.",
       },
       {
-        position: "Software Engineer Intern",
+        position: "software engineer intern",
         time: "jun 2022 - jan 2023",
         desc: "support software projects through creation of software test procedure/description documentation. cross check project requirements with DOORs",
       },

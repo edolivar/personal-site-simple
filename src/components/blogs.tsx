@@ -9,7 +9,7 @@ interface Blog {
   name: string;
   date: string;
   url: string;
-  content: string[];
+  content: string;
 }
 
 const BlogList = () => {

@@ -2,7 +2,7 @@ import React from "react";
 import BlogLayout from "@/components/blog-layout";
 import { blogs as content } from "@/data/data";
 
-const BlogOne = () => {
+const BlogTwo = () => {
   const blog = content[1];
   return (
     <BlogLayout title={blog.name} date={blog.date}>
@@ -97,4 +97,4 @@ const BlogOne = () => {
   );
 };
 
-export default BlogOne;
+export default BlogTwo;

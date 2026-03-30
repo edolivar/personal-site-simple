@@ -142,11 +142,20 @@ export const blogs = [
     name: "how using neovim made me a vscode user",
     date: "jul 01 2025",
     url: "/blogs/b/1",
+    content: ""
   },
   {
     id: "2",
     name: "ios notes < notion",
     date: "mar 27 2026",
     url: "/blogs/b/2",
+    content: ""
+  },
+  {
+    id: "3",
+    name: "ipad as dev",
+    date: "mar 30 2026",
+    url: "/blogs/b/3",
+    content: ""
   },
 ];

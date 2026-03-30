@@ -132,6 +132,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
       filtered = blogs;
     } else {
       // Enhanced search: search in both title and content
+      // TODO: incoporate the actually content of the blog to be searchable.
       filtered = blogs.filter((blog) => {
         const titleMatch = blog.name
           .toLowerCase()

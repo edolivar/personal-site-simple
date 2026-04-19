@@ -3,6 +3,8 @@ import AnimatedLink from "./animated-link";
 import { blogs as content } from "@/data/data";
 import Link from "next/link";
 
+const sortedBlogs = [...content].sort((a, b) => b.date.localeCompare(a.date));
+
 const Blogs = () => {
   return (
     <div>
@@ -11,13 +13,13 @@ const Blogs = () => {
       </h3>
 
       <div className="my-5">
-        {content.slice(0, 2).map((blogItem, id) => (
+        {sortedBlogs.slice(0, 2).map((blogItem, id) => (
           <Link href={blogItem.url} key={id}>
             <div className="py-2 flex items-center justify-between group">
               <div className="text-xl group-hover:text-light-green transition-colors duration-400 ease-in-out">
                 {blogItem.name}
               </div>
-              <div className="text-light-grey">{blogItem.date}</div>
+              <div className="text-light-grey">{blogItem.displaydate}</div>
             </div>
           </Link>
         ))}

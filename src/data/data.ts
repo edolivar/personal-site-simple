@@ -19,7 +19,7 @@ export const nav = [
 export const profile = {
   name: "edwin jim olivares",
   location: "los angeles, ca",
-  current: "freelancer and developer @ STS",
+  current: "software engineer",
   desc: "usually just working on some personal projects to learn about the new technologies that are coming out. reformed javaScript hater. bad habit of looking for green checkmark on stackoverflow.",
 };
 
@@ -72,6 +72,8 @@ export const projects = [
     role: "developer & designer",
     desc: "transfer legacy system to shopify, and redesign site according to brand identity. integrate shop with 3rd party vendors like macy's",
     url: "https://aremesfermentis.com",
+    displaydate: "",
+    date: "",
     points: [
       "customize shopify liquid to further match brand identity",
       "customize company emails",
@@ -83,6 +85,8 @@ export const projects = [
     role: "developer & creator",
     desc: "simple google drive clone with user management(clerk), rate limits, analytics(posthog), site health analytics(sentry), and file/image upload (uploadthing)",
     url: "https://drive-klone.netlify.app",
+    displaydate: "",
+    date: "",
     points: [
       "successfully implement core google drive functionality",
       "implement modern data fetching techniques (ex. data access layer)",
@@ -94,6 +98,8 @@ export const projects = [
     role: "site creator & designer",
     desc: "in the process of remaking company site to something more modern, which displays company information(licenses and contact info)first and foremost",
     url: "https://so-plumbing-inc.vercel.app",
+    displaydate: "",
+    date: "",
     points: [
       "modernize company website to comprehensively display company information",
       "add job/invoice request functionality",
@@ -104,6 +110,8 @@ export const projects = [
     role: "developer & designer",
     desc: "learning how to use tools like aceturnity for flashy animations, and shadcn for nicely styled components",
     url: "https://personal-animated-personal-site-team.vercel.app",
+    displaydate: "",
+    date: "",
     points: [
       "learned how to implement schadcn components w/ aceternity",
       "understand fundmentals of component tree w/ use of server/client components",
@@ -114,6 +122,8 @@ export const projects = [
     role: "prototyper",
     desc: "create prototype company looking to move their online tool from free to use to closed. setup user registration, payment capture, and auth",
     url: "https://biovizit.webflow.io",
+    displaydate: "",
+    date: "",
     points: [
       "understand the process of creating a proof of concept",
       "integrate with 3rd party tools like clerk and stripe",
@@ -140,21 +150,24 @@ export const blogs = [
   {
     id: "1",
     name: "how using neovim made me a vscode user",
-    date: "jul 01 2025",
+    displaydate: "jul 01 2025",
+    date: "2025-07-01",
     url: "/blogs/b/1",
     content: ""
   },
   {
     id: "2",
     name: "ios notes < notion",
-    date: "mar 27 2026",
+    displaydate: "mar 27 2026",
+    date: "2026-03-27",
     url: "/blogs/b/2",
     content: ""
   },
   {
     id: "3",
     name: "ipad as dev",
-    date: "mar 30 2026",
+    displaydate: "mar 30 2026",
+    date: "2026-03-30",
     url: "/blogs/b/3",
     content: ""
   },

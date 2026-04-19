@@ -3,7 +3,7 @@ import NavBar from "./nav-bar";
 
 type blogProps = {
   title: string;
-  date: string;
+  displaydate: string;
   children: React.ReactNode;
 };
 const BlogLayout = (props: blogProps) => {
@@ -14,7 +14,7 @@ const BlogLayout = (props: blogProps) => {
         <span className="text-light-green mr-2">{"*"}</span>
         {props.title}
       </div>
-      <div className="blog-date">{props.date}</div>
+      <div className="blog-date">{props.displaydate}</div>
       <div>{props.children}</div>
     </div>
   );

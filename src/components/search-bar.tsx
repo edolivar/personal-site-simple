@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 interface Blog {
   id: string;
   name: string;
+  displaydate: string;
   date: string;
   url: string;
   content: string;

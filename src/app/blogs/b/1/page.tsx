@@ -5,7 +5,7 @@ import { blogs as content } from "@/data/data";
 const BlogOne = () => {
   const blog = content[0];
   return (
-    <BlogLayout title={blog.name} date={blog.date}>
+    <BlogLayout title={blog.name} displaydate={blog.displaydate}>
       <p className="blog-content">
         {
           "i've been programming for a long time now; my journey started with robotc, programming robot functionality to remote cotrols. i studied computer science at cal poly (slo) and since then have worked for raytheon and done a wide range of freelance projects. throughout that time one thing has remained consistent my coding setup."

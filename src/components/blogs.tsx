@@ -7,14 +7,17 @@ import SearchBar from "./search-bar";
 interface Blog {
   id: string;
   name: string;
+  displaydate: string;
   date: string;
   url: string;
   content: string;
 }
 
+const sortedBlogs = [...content].sort((a, b) => b.date.localeCompare(a.date));
+
 const BlogList = () => {
   // State to hold filtered blogs - starts with all blogs
-  const [filteredBlogs, setFilteredBlogs] = useState<Blog[]>(content);
+  const [filteredBlogs, setFilteredBlogs] = useState<Blog[]>(sortedBlogs);
   const [selectedId, setSelectedId] = useState<string>("0");
 
   // Handle filtered results - memoized to prevent useEffect dependency issues
@@ -31,7 +34,7 @@ const BlogList = () => {
     <div>
       {/* SearchBar component that will filter the blogs */}
       <SearchBar
-        blogs={content}
+        blogs={sortedBlogs}
         onFilteredResults={handleFilteredResults}
         onSelectedIdChange={handleSelectedIdChange}
       />
@@ -47,7 +50,7 @@ const BlogList = () => {
                 {blogItem.name}
               </div>
               <div className="hidden text-light-grey md:block">
-                {blogItem.date}
+                {blogItem.displaydate}
               </div>
             </div>
           </Link>

@@ -21,13 +21,13 @@ export default function Home() {
       </div>
       <div className="profile-item">{profile.desc}</div>
       <div className="mt-12 ">
+        <Blogs />
+      </div>
+      <div className="mt-12 ">
         <Work />
       </div>
       <div className="mt-12 ">
         <Project />
-      </div>
-      <div className="mt-12 ">
-        <Blogs />
       </div>
       <div className="mt-12 ">
         <Links />
